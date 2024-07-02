@@ -1,0 +1,292 @@
+header{
+    position: fixed;
+background-color: red; 
+text-align: center;
+padding: 10px;
+width: 100%;
+top: 0px;
+left: 0px;
+z-index: 1;
+
+}
+
+header h1{
+    color: #faebd7;
+    border: #faebd7 10px solid;
+    display: inline-block;
+    padding: 5px 6px;
+    border-radius: 30px;
+
+}
+
+.banner{
+    position: relative;
+    left: 0px;
+}
+.banner img{
+    max-width: 100%;
+}
+
+.banner .welcome{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    background-color:#ffbb00;
+    color: white;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 10px #ffbb00 solid;
+
+
+}
+
+.banner h2{
+    font-size: 2em;
+}
+
+h2 span{
+    font-size: 1.5em;
+}
+
+.main-nav{
+
+    position: sticky;
+    text-align: center;
+    background-color:#f1f2f3;
+    border: #f1f2f3;
+    border-radius: 10px;
+    padding: 10px;
+    left: 0px;
+    right: 0px;
+    top: 125px;
+    z-index: 1;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0px;
+    text-decoration:none;
+
+    
+}
+.main-nav li{
+    width: 20%;
+    display: inline-block;
+    font-size: 35px;
+}
+
+ li a{
+    color: #fc0909;
+}
+ 
+li a.join{
+    color: green;
+}
+
+.main{
+    max-width: 100%;
+    width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.main-section p{
+    color:red;
+    line-height: 1.5em;
+    font-size: 20px;
+    
+}
+
+.main-section h2{
+    font-size: 2.5em;
+    color:white;
+    background-color: red;
+    display: inline-block;
+    border: 10px red solid;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+
+}
+
+.images{
+    text-align: center;
+
+}
+
+.images li{
+    display: inline-block;
+    white-space: nowrap;
+    width: 40%;
+    margin: 10px;
+    padding: 0 20px;
+
+}
+ 
+.images li img{
+    max-width: 100%;
+    padding: 10px;
+    border: #fc0909 solid 4px;
+    border:border-box;
+}
+
+.join-now{
+    border: 20px #f1f2f3 solid;
+    background-color:#f1f2f3;
+    text-align: center;
+    padding: 10px 20px ;
+    margin: 10px 10px ;
+    
+}
+.join-now h2{
+    color: red;
+    font-size: 2.5em;
+}
+.join-now p{
+    color: green;
+    font-size: 1.5em;
+}
+
+.join-now form input{
+    text-align: center;
+    font-style:italic;
+    border: red 4px solid;
+    border-radius: 25px;
+    font-size: 24px;
+
+
+}
+
+footer{
+    text-align: center;
+    background-color: red;
+    font-size: 20px;
+    color: wheat;
+    padding: 5px 10px;
+}
+
+.main-nav ul li :hover{
+text-decoration: underline wheat;
+}
+
+
+.images li:hover {
+    position: relative;
+    top: -4px;
+    border: 1px green solid;
+}
+
+form input:focus{
+    border: 3px rgb(188, 228, 12) solid;
+
+}
+
+form input:valid{
+    border: crimson 4px solid;
+}
+
+/* styting the page for different screen size*/
+
+@media screen and (max-width: 900px) {
+
+    .banner h2{
+        font-size: 20px;
+
+    }
+
+    .banner .welcome {
+       top: 50%;
+       padding: 5px;
+       border: 5px;
+    }
+    .main-nav li{
+        font-size: 20px;
+
+
+    }
+    header{
+        padding: 1px;
+    }
+
+    .main-section h2{
+        font-size: 1.5em;
+    }
+
+    .main-section p{
+        font-size: 15px;
+
+    }
+    .main-nav{
+        top: 119px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+.banner .welcome{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px;
+    border: 0px;
+    display: inline-block;
+    width: 100%;
+
+    
+
+   
+}
+.welcome h2 br{
+    display: none;
+}
+
+.welcome h2, h2 span{
+    font-size: 20px;
+
+}
+
+.banner .welcome:hover{
+    background-color: red;
+}
+
+.images li{
+width: 100%;
+display: flex;
+}
+
+li img{
+    display: flex;
+    position: relative;
+    left: 0px;
+
+
+}
+
+.main-nav li{
+    display:block;
+    position: relative;
+    left: 0px;
+
+    margin: 10px 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: 17px;
+
+}
+
+.main-nav{
+    text-align: start;
+    width: 100%;
+    top: 0px;
+    
+}
+
+header{
+    position: relative;
+}
+
+
+}
